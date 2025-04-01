@@ -56,15 +56,15 @@ function sumNumbers(numbers) {
 
 // Iteration #3.1 Bonus:
 
-function sum(sum) {
-  if (sum.length === 0) {
+function sum(arr) {
+  if (arr.length === 0) {
     return 0;
   }
 
   let total = 0;
 
-  for (let i = 0; i < sum.length; i++) {
-    let value = sum[i];
+  for (let i = 0; i < arr.length; i++) {
+    let value = arr[i];
 
     if (typeof value === "number") {
       total += value; //
@@ -80,23 +80,23 @@ function sum(sum) {
     }
   }
 
-  return total; // Retornamos la suma total
+  return total;
 }
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers(average) {
-  if (average.length === 0) {
+function averageNumbers(numbers) {
+  if (numbers.length === 0) {
     return null;
   }
   let sum = 0;
 
-  for (let i = 0; i < average.length; i++) {
-    sum += average[i];
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
   }
-  return sum / average.length;
+  return sum / numbers.length;
 }
 
 // Level 2: Array of strings
@@ -113,17 +113,17 @@ const wordsArr = [
   "palace",
 ];
 
-function averageWordLength(averageword) {
-  if (averageword.length === 0) {
+function averageWordLength(words) {
+  if (words.length === 0) {
     return null;
   }
 
   let sum = 0;
 
-  for (let i = 0; i < averageword.length; i++) {
-    sum += averageword[i].length;
+  for (let i = 0; i < words.length; i++) {
+    sum += words[i].length;
   }
-  return sum / averageword.length;
+  return sum / words.length;
 }
 
 // Bonus - Iteration #4.1
@@ -169,11 +169,11 @@ const wordsUnique = [
   "bring",
 ];
 
-function uniquifyArray(unique) {
-  if (unique.length === 0) {
+function uniquifyArray(arr) {
+  if (arr.length === 0) {
     return null;
   }
-  return [...new Set(unique)];
+  return [...new Set(arr)];
 }
 
 // Iteration #6: Find elements
